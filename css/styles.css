@@ -1,11 +1,11 @@
 .contenedorGeneral{
-    height: 200vh;
+    height: 190vh;
     width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
     margin: 0;
-    align-items: flex-start;
+    align-items: center;
     background-color: rgb(172, 152, 152);
 }
 .link a:link {
@@ -47,7 +47,7 @@
     color: rgb(90, 73, 50);
 }
 .cuerpo{
-    background-color: rgb(216, 197, 181);
+    background: linear-gradient(to right, rgb(216, 197, 181), rgb(236, 200, 144));
     width: 100%;
     height: 100em;
     position: absolute;
@@ -56,8 +56,107 @@
     flex-direction: row;
     justify-content: space-between;
 }
-.bordes {
-    background-color: black;
+
+.centro {
+    width: 70%;
     height: 100em;
-    width: 15em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.bordes {
+    height: 100em;
+    width: 15%;
+}
+.espacioVacio {
+    width: 100%;
+    height: 6em;
+}
+.contenido {
+    width: 100%;
+    height: 94%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.titulo {
+    width: 100%;
+    height: 4em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.parrafo {
+    margin-bottom: 5px;
+    width: 100%;
+    height: 28em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.parrafoTexto{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.espacioMovil{
+    width: 3%;
+    height: 100%;
+}
+.espacioTexto{
+    width: 97%;
+    height: 100%;
+}
+.propiedadesTexto{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.parrafoImagen{
+    width: 50%;
+    height: 100%;
+}
+.imagenesHome{
+    width: 100%;
+    height: 100%;
+}
+
+.piePagina{
+    width: 100%;
+    height: 11em;
+    position: absolute;
+    top: 106em;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(101, 40, 40);
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .bordes{
+        width: 0%;
+    }
+    .centro{
+        width: 100%;
+    }
+}
+@media (max-width: 800px) {
+    .parrafo{
+        height: 56em;
+        flex-direction: column;
+    }
+    .parrafoTexto{
+        width: 100%;
+        height: 100%;
+    }
+    .parrafoImagen{
+        width: 80%;
+        height: 80%;
+    }
 }
