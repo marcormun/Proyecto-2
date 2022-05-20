@@ -1,0 +1,58 @@
+body{
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgb(172, 152, 152);
+}
+.link a:link {
+    text-decoration: none;
+}
+.barraNavegacion{
+    display: flex;
+    width: 100em;
+    flex-direction: row;
+    height: 6em;
+    background-color: rgb(204, 193, 193);
+    align-items: center;
+    justify-content: space-around;
+}
+.logo {
+    height: 5em;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.link{
+    height: 3em;
+    width: 8em;
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fuenteLinks{
+    color: rgb(124, 100, 68);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.fuenteLinks:hover {
+    color: rgb(90, 73, 50);;
+}
+.cuerpo{
+    background-color: rgb(216, 197, 181);
+    height: 100em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.bordes {
+    background-color: black;
+    height: 100em;
+    width: 10em;
+}
