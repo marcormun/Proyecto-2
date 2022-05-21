@@ -136,7 +136,7 @@ a:link {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: rgb(97, 52, 52);
 }
 .direccion{
@@ -151,9 +151,13 @@ a:link {
 .textoFooter{
     font-weight: bold;
     color: wheat;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.textoFooter:hover{
+    color: rgb(220, 195, 148);
 }
 .linkDerechos{
     height: 3em;
