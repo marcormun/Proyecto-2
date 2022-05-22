@@ -295,33 +295,61 @@ a:link {
     justify-content: flex-start;
 }
 
-.desplegable{
-    position: relative;
-}
-.linkDesplegable{
-    width: 1rem;
+
+.dropLink {
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: #777;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
     padding: 0;
-}
-.menuDesplegable{
+  }
+  
+  .dropdown.active > .dropLink,
+  .dropLink:hover {
+    color: black;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: none;
+    background-color: rgb(204, 193, 193);
+  }
+  
+  .dropdown-menu {
     position: absolute;
-    top: 5em;
-    right: calc(2rem + .25rem);
-    background-color: white;
+    top: calc(100% + .25rem);
+    right: 1em;
+    background-color: rgb(204, 193, 193);
     padding: .75rem;
     border-radius: .25rem;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
     opacity: 0;
     pointer-events: none;
-    z-index: 100;
     transform: translateY(-10px);
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
-}
-
-.desplegable > .linkDesplegable:focus .menuDesplegable{
+  }
+  
+  .dropdown.active > .dropLink + .dropdown-menu {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
-}
+    display: block;
+  }
+  
+  .information-grid {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 2rem;
+  }
+  
+  .dropdown-links {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+  }
 
 @media (max-width: 1200px) {
     .bordes{
@@ -375,7 +403,7 @@ a:link {
         height: 80%;
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .link{
         display: none;
     }
@@ -385,5 +413,11 @@ a:link {
 
     .pizzas{
         width: 13em;
+    }
+    .dropdown{
+        display: block;
+    }
+    .dropdown-menu{
+        display: block;
     }
 }
