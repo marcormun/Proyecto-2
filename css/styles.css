@@ -1,4 +1,5 @@
 /* CSS Home */
+/* Propiedades de la pagina */
 .contenedorGeneral{
     height: 190vh;
     width: 100%;
@@ -147,7 +148,6 @@ a:link {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-color: antiquewhite; */
 }
 .textoFooter{
     font-weight: bold;
@@ -168,6 +168,7 @@ a:link {
     align-items: center;
     justify-content: center;
 }
+
 /* CSS Carta */
 .contenedorGeneralCarta{
     height: 190vh;
@@ -237,7 +238,7 @@ a:link {
     justify-content: space-around;
     background-color: rgb(97, 52, 52);
 }
-
+/* CSS Contacto */
 .contenedorGeneralContacto{
     height: 139vh;
     width: 100%;
@@ -295,7 +296,7 @@ a:link {
     justify-content: flex-start;
 }
 
-
+/* CSS menu desplegable */
 .dropLink {
     background: none;
     border: none;
@@ -350,7 +351,7 @@ a:link {
     flex-direction: column;
     gap: .25rem;
   }
-
+/* media para hacer pagina responsive */
 @media (max-width: 1200px) {
     .bordes{
         width: 0%;
