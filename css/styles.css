@@ -238,6 +238,20 @@ a:link {
     background-color: rgb(97, 52, 52);
 }
 
+.contenedorGeneralContacto{
+    height: 139vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    background-color: rgb(172, 152, 152);
+}
+.bordesContacto {
+    height: 66em;
+    width: 15%;
+}
 .contenidoFormulario{
     display: flex;
     flex-direction: column;
@@ -251,17 +265,81 @@ a:link {
 .textoCentrado{
     text-align: center;
 }
+.cuerpoContacto{
+    background: linear-gradient(to right, rgb(216, 197, 181), rgb(236, 200, 144));
+    width: 100%;
+    height: 79em;
+    position: absolute;
+    top: 6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.piePaginaContacto{
+    width: 100%;
+    height: 11em;
+    position: absolute;
+    top: 74em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(97, 52, 52);
+}
+.centroContacto {
+    width: 70%;
+    height: 79em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.desplegable{
+    position: relative;
+}
+.linkDesplegable{
+    width: 1rem;
+    padding: 0;
+}
+.menuDesplegable{
+    position: absolute;
+    top: 5em;
+    right: calc(2rem + .25rem);
+    background-color: white;
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 100;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.desplegable > .linkDesplegable:focus .menuDesplegable{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
 
 @media (max-width: 1200px) {
     .bordes{
         width: 0%;
     }
+    .bordesContacto{
+        width: 0%;
+    }
     .centro{
         width: 100%;
     }
-    .centroCarta{
+    .centroCarta {
         width: 100%;
     }
+    .centroContacto{
+        width: 100%;
+    }
+
 }
 @media (max-width:1000px){
     .gridPizzas {
@@ -271,7 +349,7 @@ a:link {
         height: 100%;
     }
     .contenedorGeneralCarta{
-        height: 360vh;
+        height: 344vh;
     }
     .centroCarta{
         height: 200em;
@@ -301,12 +379,10 @@ a:link {
     .link{
         display: none;
     }
-    .piePagina{
+    .piePagina .piePaginaCarta .piePaginaContacto{
         justify-content: flex-start;
     }
-    .piePaginaCarta{
-        justify-content: flex-start;
-    }
+
     .pizzas{
         width: 13em;
     }
