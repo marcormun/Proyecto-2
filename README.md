@@ -13,8 +13,11 @@
 ## How to run
 
 -----------------
+U can open it with github pages:
 
-Open a terminal and clone the repository with the following command:
+https://marcormun.github.io/Proyecto-2/
+
+Or open a terminal and clone the repository with the following command:
 ```
     git clone https://github.com/marcormun/Proyecto-2
 ```
